@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Book List <button class="btn btn-success" (click)="logout()">Logout</button></h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Publisher</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.isbn }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.publisher }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
